@@ -15,19 +15,22 @@ let y = class style{
         top:'7vh',
         left:0,
         overflow:'hidden',
-        display:'flex'
+        display:'flex',
+        zindex:0
     }
     /// used for header element
     header = {
         backgroundColor : this.colors.header,
         width:'100vw',
-        minHeight:'7vh'
+        minHeight:'7vh',
+        zindex:0
     }
     camera ={
         width:"50%",
         float: "left",
         padding: "20px",
         overflow:'hidden',
+        zindex:0,
         image:{
             borderRadius:10,
             borderWidth: 10,
@@ -51,7 +54,8 @@ let y = class style{
             backgroundColor:'black',
             color:'white',
             height:'50%'
-        }
+        },
+        zindex:0
     }
     
     constructor(colors){
