@@ -1,20 +1,11 @@
 import React, { Component } from 'react';
 import Camera from "./import/camera";
 import Header from './import/header';
+import ControlPanel from './import/controlPanel';
 import style from './style.js'
 class Index extends Component {
     state = { 
-        style:{
-            bgColor:'#323232',
-            base:{
-                
-            },
-            header:{
-                width:'100vw',
-                minHeight:'10vh',
-                backgroundColor:'red'
-            }
-        }
+
      }
      constructor(){
         super();
@@ -22,11 +13,14 @@ class Index extends Component {
      }
     render() { 
         return ( 
-            <div style={this.style.main}>
+            <React.Fragment>
                 <Header style={this.style.header} />
-                <h2>Welcome to react!</h2> 
-                <Camera style={this.style.camera}/>
-            </div>
+                <div style={this.style.main}>
+                    <Camera style={this.style.camera}/>
+                    <ControlPanel style={this.style.cp}/>
+                </div>
+            </React.Fragment>
+            
             );
     }
 }

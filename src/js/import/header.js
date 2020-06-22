@@ -4,7 +4,7 @@ class Header extends Component {
     render() { 
         return ( 
             <header style={this.props.style}>
-                some content
+                piDrone
             </header>
          );
     }

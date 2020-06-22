@@ -16,7 +16,10 @@ class Camera extends Component {
     render() { 
         return ( 
             <div style={this.props.style}>
-                <img src={BaseImage} alt="Video camera feed"/>
+                <img style={this.props.style.image}src={BaseImage} alt="Video camera feed"/>
+                <div style={this.props.style.cOptions}>
+                    options
+                </div>
             </div> );
     }
 }
